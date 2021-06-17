@@ -20,9 +20,12 @@ Host someinternalhost
   ProxyCommand ssh appuser@178.154.231.227 -W %h:%p
 ```
 
-
 ## IP
 ```
 bastion_IP = 178.154.231.227
 someinternalhost_IP = 10.128.0.7
 ```
+
+## Test App
+testapp_IP = 178.154.205.154
+testapp_port = 9292
