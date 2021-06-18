@@ -29,3 +29,17 @@ someinternalhost_IP = 10.128.0.7
 ## Test App
 testapp_IP = 178.154.205.154
 testapp_port = 9292
+
+## +#7
+#### а. Выполнена параметризация Packer
++ ID каталога
++ ID source-образа
++ Путь к service_account_key_file
+а также дополнительно
++ ID подсети
+
+#### б. variables.json добавлен в .gitignore
+#### в*. построен образ reddit-full, поднят севрис systemd для пумы
++immutable.json
++script/service.sh
+#### г**. подготовлен скрипт create-reddit-vm.sh для создания ВМ из подготовленного образа
