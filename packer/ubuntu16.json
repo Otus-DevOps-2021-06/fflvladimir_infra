@@ -1,6 +1,5 @@
 {
     "variables": {
-        "token": "",
         "folder_id": "",
         "subnet_id": "",
         "serv_accnt": "",
