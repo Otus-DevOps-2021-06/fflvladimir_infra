@@ -1,4 +1,11 @@
 {
+    "variables": {
+        "token": "",
+        "folder_id": "",
+        "subnet_id": "",
+        "serv_accnt": "",
+        "source_image_id": ""
+    },
     "builders": [
         {
             "type": "yandex",
