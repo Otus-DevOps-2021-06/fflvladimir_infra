@@ -14,8 +14,8 @@ terraform {
 }
 
 resource "yandex_compute_instance" "app" {
-  # count = var.app_count
-  count = 2
+  count = var.app_count
+  # count = 2
 
   name = "reddit-app-${count.index}"
   zone = var.res_zone
