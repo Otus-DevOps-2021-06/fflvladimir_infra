@@ -5,6 +5,7 @@ provider "yandex" {
   zone                     = var.zone
 }
 
+# For v1
 # terraform {
 #   required_providers {
 #     yandex = {
