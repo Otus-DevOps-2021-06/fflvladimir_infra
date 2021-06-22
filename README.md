@@ -32,10 +32,13 @@ testapp_port = 9292
 
 ## +#7
 #### а. Выполнена параметризация Packer
+
 + ID каталога
 + ID source-образа
 + Путь к service_account_key_file
+
 Задания со *
+
 + ID подсети
 + variables.json добавлен в .gitignore
 + построен образ reddit-full, поднят севрис systemd для пумы
@@ -43,11 +46,19 @@ testapp_port = 9292
 + script/service.sh
 + подготовлен скрипт create-reddit-vm.sh для создания ВМ из подготовленного образа
 
-## +#8
+## +#8 terraform-1
+
 + определена переменная input для приватного ключа и зоны
 + отформатированы всё конфиги
 + добавлен terraform.tfvars.example
+
 Задания со *
+
 + поднят load balancer (lb.tf)
 + в output добавлен адрес балансировщика
 + добавлен ещё один ресурс с использование count
+
+## +#9 terraform-2
+
++ Разбиение конфигов terraform на модули
++ Хранение файла tfstate в Object Storage

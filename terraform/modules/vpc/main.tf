@@ -1,0 +1,20 @@
+# terraform {
+#   # required_version = "~> 0.12.0"
+#   required_providers {
+#     yandex = {
+#       source = "yandex-cloud/yandex"
+#     }
+#   }
+# }
+
+
+resource "yandex_vpc_network" "app-network" {
+  name = "reddit-app-network"
+}
+
+resource "yandex_vpc_subnet" "app-subnet" {
+  name           = "reddit-app-subnet"
+  zone           = "ru-central1-a"
+  network_id     = "${yandex_vpc_network.app-network.id}"
+  v4_cidr_blocks = ["10.128.0.0/24"]
+}
