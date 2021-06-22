@@ -62,3 +62,8 @@ testapp_port = 9292
 
 + Разбиение конфигов terraform на модули
 + Хранение файла tfstate в Object Storage
+
+## +#10 ansible-1
+
+- [x] Основы Ansible
+- [x] Изменилось состояние changed, при первом запуске дирекория уже существует
