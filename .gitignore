@@ -2,6 +2,8 @@
 packer/variables.json
 terraform/key.json
 
+terraform/prod/fflvladimir-key.json
+*.lock.hcl
 *.tfstate
 *.tfstate.*.backup
 *.tfstate.backup
