@@ -13,7 +13,7 @@ ssh -J appuser@178.154.231.227 appuser@10.128.0.7
 
 ## ssh someinternalhost
 
-~/.ssh/config
+```~/.ssh/config```
 ```
 Host someinternalhost
   User appuser
@@ -35,11 +35,19 @@ testapp_port = 9292
 + ID каталога
 + ID source-образа
 + Путь к service_account_key_file
-а также дополнительно
+Задания со *
 + ID подсети
++ variables.json добавлен в .gitignore
++ построен образ reddit-full, поднят севрис systemd для пумы
++ immutable.json
++ script/service.sh
++ подготовлен скрипт create-reddit-vm.sh для создания ВМ из подготовленного образа
 
-#### б. variables.json добавлен в .gitignore
-#### в*. построен образ reddit-full, поднят севрис systemd для пумы
-+immutable.json
-+script/service.sh
-#### г**. подготовлен скрипт create-reddit-vm.sh для создания ВМ из подготовленного образа
+## +#8
++ определена переменная input для приватного ключа и зоны
++ отформатированы всё конфиги
++ добавлен terraform.tfvars.example
+Задания со *
++ поднят load balancer (lb.tf)
++ в output добавлен адрес балансировщика
++ добавлен ещё один ресурс с использование count
