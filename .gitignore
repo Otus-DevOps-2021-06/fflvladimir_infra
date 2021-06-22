@@ -9,3 +9,5 @@ terraform/prod/fflvladimir-key.json
 *.tfstate.backup
 *.tfvars
 .terraform/
+
+*.retry
