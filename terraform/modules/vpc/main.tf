@@ -1,3 +1,13 @@
+terraform {
+  # required_version = "~> 0.12.0"
+  required_providers {
+    yandex = {
+      source = "yandex-cloud/yandex"
+    }
+  }
+}
+
+
 resource "yandex_vpc_network" "app-network" {
   name = "reddit-app-network"
 }
