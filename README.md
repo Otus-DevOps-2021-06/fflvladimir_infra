@@ -73,3 +73,7 @@ testapp_port = 9292
 - [x] Ansible One Play
 - [x] Ansible Multiple Plays
 - [x] Ansible Dividing Configs
+- [x] Пересобран образ Packer для app и db с указание ansible-playbook в provisioners
+- [x] Заменены образы для Terraform stage
+- [x] Конфигурация и деплой приложения с учётом всех изменений
+- [x] Добавил daemon-reload для Puma
