@@ -33,37 +33,47 @@ testapp_port = 9292
 ## +#7
 #### а. Выполнена параметризация Packer
 
-+ ID каталога
-+ ID source-образа
-+ Путь к service_account_key_file
+- [x] ID каталога
+- [x] ID source-образа
+- [x] Путь к service_account_key_file
 
 Задания со *
 
-+ ID подсети
-+ variables.json добавлен в .gitignore
-+ построен образ reddit-full, поднят севрис systemd для пумы
-+ immutable.json
-+ script/service.sh
-+ подготовлен скрипт create-reddit-vm.sh для создания ВМ из подготовленного образа
+- [x] ID подсети
+- [x] variables.json добавлен в .gitignore
+- [x] построен образ reddit-full, поднят севрис systemd для пумы
+- [x] immutable.json
+- [x] script/service.sh
+- [x] подготовлен скрипт create-reddit-vm.sh для создания ВМ из подготовленного образа
 
 ## +#8 terraform-1
 
-+ определена переменная input для приватного ключа и зоны
-+ отформатированы всё конфиги
-+ добавлен terraform.tfvars.example
+- [x] определена переменная input для приватного ключа и зоны
+- [x] отформатированы всё конфиги
+- [x] добавлен terraform.tfvars.example
 
 Задания со *
 
-+ поднят load balancer (lb.tf)
-+ в output добавлен адрес балансировщика
-+ добавлен ещё один ресурс с использование count
+- [x] поднят load balancer (lb.tf)
+- [x] в output добавлен адрес балансировщика
+- [x] добавлен ещё один ресурс с использование count
 
 ## +#9 terraform-2
 
-+ Разбиение конфигов terraform на модули
-+ Хранение файла tfstate в Object Storage
+- [x] Разбиение конфигов terraform на модули
+- [x] Хранение файла tfstate в Object Storage
 
 ## +#10 ansible-1
 
 - [x] Основы Ansible
 - [x] Изменилось состояние changed, при первом запуске дирекория уже существует
+
+## +#11 ansible-2
+
+- [x] Ansible One Play
+- [x] Ansible Multiple Plays
+- [x] Ansible Dividing Configs
+- [x] Пересобран образ Packer для app и db с указание ansible-playbook в provisioners
+- [x] Заменены образы для Terraform stage
+- [x] Конфигурация и деплой приложения с учётом всех изменений
+- [x] Добавил daemon-reload для Puma
