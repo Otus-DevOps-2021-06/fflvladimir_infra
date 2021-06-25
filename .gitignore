@@ -16,3 +16,5 @@ terraform/prod/fflvladimir-key.json
 jdauphant.nginx
 vault.key
 .vagrant/
+venv
+venvv
